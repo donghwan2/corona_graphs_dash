@@ -7,7 +7,7 @@ from plotly.subplots import make_subplots
 import pandas as pd
 
 app = dash.Dash(__name__)
-
+server = app.server
 ################################# 데이터 로드 #################################
 
 time = pd.read_csv('data/Time.csv')
